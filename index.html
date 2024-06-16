@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration - CodingRot17</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Join CodingRot17's Free Web Development Course</h1>
+        <p>Your journey to mastering web development starts here!</p>
+    </header>
+    <main>
+        <section class="registration-form">
+            <h2>Course Registration Form</h2>
+            <form id="registrationForm" action="https://formspree.io/f/mqkrrneq" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Education Background</legend>
+                    <label for="educationLevel">Highest Level of Education:</label>
+                    <select id="educationLevel" name="educationLevel" required>
+                        <option value="highSchool">High School</option>
+                        <option value="associate">Associate Degree</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="doctorate">Doctorate</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="fieldOfStudy">Field of Study:</label>
+                    <input type="text" id="fieldOfStudy" name="fieldOfStudy" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Interest</legend>
+                    <label for="experience">Do you have any prior experience with coding?</label>
+                    <select id="experience" name="experience" required>
+                        <option value="none">No Experience</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    
+                    <label for="interest">Which aspect of web development interests you the most?</label>
+                    <input type="text" id="interest" name="interest" required>
+                    
+                    <label for="goals">What are your goals for this course?</label>
+                    <textarea id="goals" name="goals" rows="4" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="availability">Preferred time for classes:</label>
+                    <select id="availability" name="availability" required>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                        <option value="weekend">Weekend</option>
+                    </select>
+                    
+                    <label for="device">Will you be using a laptop or mobile device for the course?</label>
+                    <select id="device" name="device" required>
+                        <option value="laptop">Laptop</option>
+                        <option value="mobile">Mobile Device</option>
+                    </select>
+                    
+                    <label for="questions">Any questions or comments?</label>
+                    <textarea id="questions" name="questions" rows="4"></textarea>
+                </fieldset>
+                
+                <button type="submit">Register Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CodingRot17. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
